@@ -1,0 +1,80 @@
+class Monitoring {
+
+  String id, monitoring_period, monitoring_type, monitoring_date, monitoring_year,
+      sta, lane, direction, latitude, longitude, description, repair_user_id, indicator_id,
+      indicator_name, highway_id, highway_name, monitoring_images, repair_status,
+      repair_method, repair_image_0, repair_date_0, repair_latitude_0, repair_longitude_0,
+      repair_image_50, repair_date_50, repair_latitude_50, repair_longitude_50, repair_image_100,
+      repair_date_100, repair_latitude_100, repair_longitude_100;
+
+
+  Monitoring.fromJson(Map<String, dynamic> json):
+        id = json['id'],
+        monitoring_period = json['monitoring_period'],
+        monitoring_type = json['monitoring_type'],
+        monitoring_date = json['monitoring_date'],
+        monitoring_year = json['monitoring_year'],
+        sta = json['sta'],
+        lane = json['lane'],
+        direction = json['direction'],
+        latitude = json['latitude'],
+        longitude = json['longitude'],
+        description = json['description'],
+        repair_user_id = json['repair_user_id'],
+        indicator_id = json['indicator_id'],
+        indicator_name = json['indicator_name'],
+        highway_id = json['highway_id'],
+        highway_name = json['highway_name'],
+        monitoring_images = json['monitoring_images'],
+        repair_status = json['repair_status'],
+        repair_method = json['repair_method'],
+        repair_image_0 = json['repair_image_0'],
+        repair_image_50 = json['repair_image_50'],
+        repair_image_100 = json['repair_image_100'],
+        repair_date_0 = json['repair_date_0'],
+        repair_date_50 = json['repair_date_50'],
+        repair_date_100 = json['repair_date_100'],
+        repair_latitude_0 = json['repair_latitude_0'],
+        repair_latitude_50 = json['repair_latitude_50'],
+        repair_latitude_100 = json['repair_latitude_100'],
+        repair_longitude_0 = json['repair_longitude_0'],
+        repair_longitude_50 = json['repair_longitude_50'],
+        repair_longitude_100 = json['repair_longitude_100'];
+
+  Map<String, dynamic> toJson() => {
+  'id': id,
+  'monitoring_period': monitoring_period,
+  'monitoring_type': monitoring_type,
+  'monitoring_date': monitoring_date,
+  'monitoring_year': monitoring_year,
+  'sta': sta,
+  'lane': lane,
+  'direction': direction,
+  'latitude': latitude,
+  'longitude': longitude,
+  'description': description,
+  'repair_user_id': repair_user_id,
+  'indicator_id': indicator_id,
+  'indicator_name': indicator_name,
+  'highway_id': highway_id,
+  'highway_name': highway_name,
+  'monitoring_images': monitoring_images,
+  'repair_status': repair_status,
+  'repair_method': repair_method,
+  'repair_image_0': repair_image_0,
+  'repair_image_50': repair_image_50,
+  'repair_image_100': repair_image_100,
+  'repair_date_0': repair_date_0,
+  'repair_date_50': repair_date_50,
+  'repair_date_100': repair_date_100,
+  'repair_latitude_0': repair_latitude_0,
+  'repair_latitude_50': repair_latitude_50,
+  'repair_latitude_100': repair_latitude_100,
+  'repair_longitude_0': repair_longitude_0,
+  'repair_longitude_50': repair_longitude_50,
+  'repair_longitude_100': repair_longitude_100
+  };
+
+
+
+}
